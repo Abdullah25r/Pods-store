@@ -14,7 +14,7 @@ function Navbar() {
         {/* Logo Wrapped in Link */}
         <Link to="/"className="flex items-center">
           <img src="logo.gif" alt="TimePods Logo" className="h-8" />
-          <span className="font-kanit text-2xl ml-2 text-[#ced4da] tracking-wider">TimePods</span>
+          <span className="font-kanit text-2xl ml-2 text-[#ced4da] hover:text-[#ffffff] transition tracking-wider">TimePods</span>
         </Link>
 
         {/* Desktop Nav */}
@@ -38,7 +38,7 @@ function Navbar() {
         </div>
 
         {/* Hamburger Icon */}
-        <div className="md:hidden">
+        <div className="md:hidden transition hover:text-[#ffffff] pointer hover:bg-[#1a1a1a] p-1 rounded-md">
           <button onClick={toggleMenu} aria-label="Toggle menu">
             {menuOpen ? (
               <HiOutlineX className="text-2xl" />
@@ -51,15 +51,15 @@ function Navbar() {
 
       {/* Mobile Menu (same as before) */}
       <div
-  className={`md:hidden bg-[#1c1c2a] px-6 pb-4 pt-2 space-y-4 font-poppins transition-all duration-300 ease-in-out transform ${
+  className={`md:hidden bg-[#111111] px-6 pt-2 pb-2 space-y-1 rounded-lg font-poppins transition-all duration-300 ease-in-out transform ${
     menuOpen ? 'max-h-96 opacity-100 scale-y-100' : 'max-h-0 opacity-0 scale-y-0'
   } overflow-hidden origin-top`}
 >
-  <Link to="/" className="block hover:text-[#0ff] transition">Home</Link>
-  <Link to="/shop" className="block hover:text-[#0ff] transition">Shop</Link>
-  <Link to="/devices" className="block hover:text-[#0ff] transition">Devices</Link>
-  <Link to="/news" className="block hover:text-[#0ff] transition">News</Link>
-  <button className="w-full border border-[#64748b] rounded-md py-1 hover:bg-[#0ff] hover:text-black transition font-semibold">
+  <Link to="/" className="block hover:text-[#ffffff] transition hover:bg-[#1a1a1a] p-2 rounded-md">Home</Link>
+  <Link to="/shop" className="block hover:text-[#ffffff] transition hover:bg-[#1a1a1a] p-2 rounded-md">Shop</Link>
+  <Link to="/devices" className="block hover:text-[#ffffff] transition hover:bg-[#1a1a1a] p-2 rounded-md">Devices</Link>
+  <Link to="/news" className="block hover:text-[#ffffff] transition hover:bg-[#1a1a1a] p-2 rounded-md">News</Link>
+  <button className="w-full border border-[#64748b] rounded-md py-1 hover:bg-[#ffffff] hover:text-black transition font-semibold">
     Sign In
   </button>
 </div>
