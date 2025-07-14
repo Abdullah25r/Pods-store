@@ -8,6 +8,7 @@ import Devices from "./pages/Devices";
 import Carousel from "./components/Carousel";
 import Productsheading from "./components/Productsheading";
 import Extras from "./components/Extras";
+import Gift from "./components/Gift";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Productsheading />
       <Card />
       <Extras />
+      <Gift/>
     </div>
   );
 }
