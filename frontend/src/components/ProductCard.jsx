@@ -31,7 +31,7 @@ const ProductCard = (props) => {
     //   </div>
     // </div>
 
-    <div className="bg-[#1a1a1a] p-5 mb-10 hover:-translate-y-2 transition-all rounded-lg shadow-lg hover:shadow-xl duration-300">
+    <div className="bg-[#1a1a1a] p-5 mb-10 mt-3 hover:-translate-y-2 transition-all rounded-lg shadow-md hover:shadow-[#1a1a1a] duration-300">
       <div className="align-items-center flex cursor-pointer -mx-2 flex-col mb-5">
         <img
           src={props.path}

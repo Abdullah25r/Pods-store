@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Add this to your global CSS */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+/* Custom highlighter for all text */
+::selection {
+  background-color: #f6f8ff; /* Tailwind's slate-900 */
+  color: #000000;            /* Tailwind's slate-50 */
+}
