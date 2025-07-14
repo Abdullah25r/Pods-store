@@ -6,10 +6,11 @@ import Shop from "./pages/Shop";
 import News from "./pages/News";
 import Devices from "./pages/Devices";
 import Carousel from "./components/Carousel";
+import Productsheading from "./components/Productsheading";
 
 function App() {
   return (
-    <div className="min-h-screen text-white">
+    <div className="min-h-screen text-white bg-black">
     <Navbar/>
     <Routes>
       <Route path="/" element={<Home/>} />
@@ -18,7 +19,7 @@ function App() {
       <Route path="/devices" element={<Devices/>} />
     </Routes>
     <Carousel/>
-
+    <Productsheading/>
     <Card/>
     </div>
   );

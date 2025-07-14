@@ -1,21 +1,29 @@
-import React from 'react'
-import ProductCard from './ProductCard'
+import React from "react";
+import ProductCard from "./ProductCard";
 
+const names = ["Vespor Airpuds", "Eclipse Earbuds", "Nova Buds", "Galaxy Pods"];
+const description = [
+  "Experience the future of sound with Vespor Airpuds.",
+  "Eclipse Earbuds: Where Style Meets Sound.",
+  "Nova Buds: Your Gateway to Stellar Sound.",
+  "Galaxy Pods: Explore the Universe of Sound.",
+];
 function Card() {
-  const pods = ['pods1','pods2','pods3','pods4']
+  const pods = ["pods1", "pods2", "pods3", "pods4"];
+
   return (
-    <div className='flex gap-4 flex-wrap justify-center'>
-      {
-        pods.map((pod,index)=>
-          <ProductCard
-            path={`./img/${pod}.webp`}
-            key={index} 
-            alt={`${pod}`}
-          />
-        )
-      }
+    <div className="flex gap-5 flex-wrap my-4 justify-center">
+      {pods.map((pod, index) => (
+        <ProductCard
+          path={`./img/${pod}.webp`}
+          key={index}
+          alt={`${pod}`}
+          name={names[index]}
+          desc = {description[index]}
+        />
+      ))}
     </div>
-  )
+  );
 }
 
-export default Card
+export default Card;
