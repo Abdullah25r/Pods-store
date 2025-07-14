@@ -12,7 +12,8 @@ function Card() {
   const pods = ["pods1", "pods2", "pods3", "pods4"];
 
   return (
-    <div className="flex gap-5 flex-wrap my-4 justify-center">
+   <div className="flex gap-5 sm:flex-nowrap flex-wrap sm:overflow-x-auto overflow-x-scroll whitespace-nowrap px-4 my-4">
+
       {pods.map((pod, index) => (
         <ProductCard
           path={`./img/${pod}.webp`}
