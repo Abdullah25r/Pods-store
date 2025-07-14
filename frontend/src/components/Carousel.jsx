@@ -3,8 +3,8 @@ import React, { useState, useEffect } from 'react';
 // Placeholder images for demonstration. Replace with your actual image paths.
 const images = [
     "./img/main.jpg",
-    "./img/Carousal2.jpg",
-    "./img/Carousal3.jpg",
+    "./img/carousal2.jpg",
+    "./img/carousal3.jpg",
   "./img/4183738.jpg",
 ];
 
