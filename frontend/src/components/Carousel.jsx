@@ -38,7 +38,7 @@ const Carousel = () => {
   }, [currentSlide]); // Re-run effect when currentSlide changes to reset timer
 
   return (
-    <div id="default-carousel" className="relative w-full mx-auto max-w-screen-lg rounded-lg shadow-lg my-8 overflow-hidden">
+    <div id="default-carousel" className="relative w-full mx-auto px-2 max-w-screen-xl rounded-lg shadow-lg my-8 overflow-hidden">
       {/* Carousel wrapper */}
       <div className="relative h-56 md:h-96">
         {images.map((image, index) => (
