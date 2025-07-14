@@ -20,9 +20,9 @@ function Navbar() {
         {/* Desktop Nav */}
         <nav className="hidden md:flex gap-8 text-sm font-poppins font-medium">
           <Link to="/" className="hover:text-[#ffffff] transition hover:bg-[#1a1a1a] p-2 rounded-md">Home</Link>
-          <Link to="/shop" className="hover:text-[#ffffff] transition hover:bg-[#1a1a1a] p-2 rounded-md">Shop</Link>
-          <Link to="/devices" className="hover:text-[#ffffff] transition hover:bg-[#1a1a1a] p-2 rounded-md">Devices</Link>
-          <Link to="/news" className="hover:text-[#ffffff] transition hover:bg-[#1a1a1a] p-2 rounded-md">News</Link>
+          <Link to="/shop" className="hover:text-[#ffffff] transition hover:bg-[#1a1a1a] p-2 rounded-md">Products</Link>
+          <Link to="/devices" className="hover:text-[#ffffff] transition hover:bg-[#1a1a1a] p-2 rounded-md">Smart Watches</Link>
+          <Link to="/news" className="hover:text-[#ffffff] transition hover:bg-[#1a1a1a] p-2 rounded-md">Accessories</Link>
         </nav>
 
         {/* Action Buttons */}
