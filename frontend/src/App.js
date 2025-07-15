@@ -10,6 +10,9 @@ import Productsheading from "./components/Productsheading";
 import Extras from "./components/Extras";
 import Gift from "./components/Gift";
 import Footer from './components/Footer'
+import Watches from "./components/Watches";
+
+
 function App() {
   return (
     <div className="min-h-screen text-white bg-black">
@@ -25,7 +28,9 @@ function App() {
       <Card />
       <Extras />
       <Gift/>
+      <Watches/>
       <Footer/>
+      
 
     </div>
   );
