@@ -1,4 +1,4 @@
-    import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar";
 import Card from "./components/Card";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
@@ -11,6 +11,7 @@ import Extras from "./components/Extras";
 import Gift from "./components/Gift";
 import Footer from './components/Footer'
 import Watches from "./components/Watches";
+import Testimonial from "./components/Testimonial";
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
         <Extras />
         <Gift />
         <Watches />
+        <Testimonial/>
       </div>
 
       <Footer />
