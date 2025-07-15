@@ -1,4 +1,4 @@
-import Navbar from "./components/Navbar";
+    import Navbar from "./components/Navbar";
 import Card from "./components/Card";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
@@ -9,7 +9,7 @@ import Carousel from "./components/Carousel";
 import Productsheading from "./components/Productsheading";
 import Extras from "./components/Extras";
 import Gift from "./components/Gift";
-
+import Footer from './components/Footer'
 function App() {
   return (
     <div className="min-h-screen text-white bg-black">
@@ -25,6 +25,8 @@ function App() {
       <Card />
       <Extras />
       <Gift/>
+      <Footer/>
+
     </div>
   );
 }
