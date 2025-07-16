@@ -1,8 +1,8 @@
 import Navbar from "./components/Navbar";
-import Card from "./components/Card";
+import Card from "./components/ProductCard";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Shop from "./pages/Shop";
+import Products from "./pages/Products";
 import News from "./pages/News";
 import Devices from "./pages/Devices";
 import Carousel from "./components/Carousel";
@@ -23,18 +23,12 @@ function App() {
       <div className="max-w-[1430px] mx-auto px-4">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/shop" element={<Shop />} />
+          <Route path="/Products" element={<Products />} />
           <Route path="/news" element={<News />} />
           <Route path="/devices" element={<Devices />} />
         </Routes>
 
-        <Carousel />
-        <Productsheading />
-        <Card />
-        <Extras />
-        <Gift />
-        <Watches />
-        <Testimonial/>
+      
       </div>
 
       <Footer />
