@@ -62,9 +62,9 @@ function Footer() {
         {/* Social Icons */}
         <div className="flex justify-start mt-10">
           <div className="flex space-x-4">
-            <FaFacebookF className="text-xl hover:text-red-600 cursor-pointer" />
-            <FaInstagram className="text-xl hover:text-red-600 cursor-pointer" />
-            <FaWhatsapp className="text-xl hover:text-red-600 cursor-pointer" />
+            <FaFacebookF className="text-xl hover:text-cyan-600 cursor-pointer" />
+            <FaInstagram className="text-xl hover:text-cyan-600 cursor-pointer" />
+            <FaWhatsapp className="text-xl hover:text-cyan-600 cursor-pointer" />
           </div>
         </div>
 

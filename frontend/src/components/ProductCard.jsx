@@ -3,26 +3,24 @@ import Star from "./Star";
 
 const ProductCard = (props) => {
   return (
-
     <div className="bg-[#1a1a1a] p-5 mb-10 mt-3 hover:-translate-y-2 transition-all rounded-lg shadow-md hover:shadow-[#1a1a1a] duration-300">
       <div className="align-items-center flex cursor-pointer -mx-2 flex-col mb-5">
         <img
           src={props.path}
           alt={props.alt}
-          className="h-52 object-contain rounded-md bg-[#2a2a2a] mb-3 "
+          className="h-52  object-contain rounded-md bg-[#2a2a2a] mb-3 "
         />
       </div>
       <div className="description-section">
         <h2 className="font-poppins font-semibold">{props.name}</h2>
-        <p className="text-wrap w-56">{props.desc}</p>
+        <p className="text-wrap w-56 line-clamp-2">{props.desc}</p>
         <Star />
       </div>
       <div className="flex justify-between items-center mt-7">
-        
         <span className="font-semibold">$25.5</span>
         <button
           type="button"
-          class="text-black bg-white text-sm px-2 py-2 text-center inline-flex items-center me-2 border border-[#64748b] rounded-md hover:bg-[#1a1a1a] hover:text-white transition duration-250 ease-in-out font-semibold"
+          class="text-black bg-white text-sm md:px-2 md:py-2 px-1 py-1 text-center inline-flex items-center me-2 border border-[#64748b] rounded-md hover:bg-[#1a1a1a] hover:text-white transition duration-250 ease-in-out font-semibold"
         >
           <svg
             class="w-3.5 h-3.5 me-2"
