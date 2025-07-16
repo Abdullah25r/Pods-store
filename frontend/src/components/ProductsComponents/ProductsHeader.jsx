@@ -1,11 +1,17 @@
 import React from "react";
+import { products } from "../../AllProducts";
 
-function ProductsHeader() {
+
+
+function ProductsHeader({ onCategorySelect }) {
+
   const categories = [
-    { name: "Watches", image: "./img/w-7.webp" },
+    { name: "Watch", image: "./img/w-7.webp" },
     { name: "Headphone", image: "./img/headphone-1.webp" },
-    { name: "Airpods", image: "./img/pods1.webp" },
+    { name: "Pods", image: "./img/pods1.webp" },
+    { name: "Extras", image: "./img/speaker.webp" },
   ];
+
   return (
     <div className="flex flex-col items-center mt-20 mb-20">
       <h2 className="text-6xl font-semibold font-poppins pb-3 mb-14 md:mb-10 sm:mb-10 bg-gradient-to-b from-white to-cyan-900 bg-clip-text text-transparent">
@@ -17,6 +23,7 @@ function ProductsHeader() {
             <div
               key={index}
               className="flex cursor-pointer group flex-col items-center gap-4  "
+              onClick={() => onCategorySelect(category.name)}
             >
               <div className="w-20 h-20 bg-[#1a1a1a] flex items-center justify-center rounded-full">
                 <img
