@@ -18,6 +18,7 @@ import AboutTimePods from "./components/AboutTimePods";
 import ReturnRefundPolicy from "./components/ReturnRefundPolicy";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import TermsAndConditions from "./components/TermsConditions";
+import Cart from "./pages/Cart";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path="/products" element={<Products />} />
           <Route path="/news" element={<News />} />
           <Route path="/devices" element={<Devices />} />
+          <Route path="/Cart" element={<Cart />} />
 
              {/* ✅ New page routes */}
                     <Route path="/about" element={<AboutTimePods />} />

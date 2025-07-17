@@ -2,11 +2,21 @@ import React, { useState } from "react";
 import { HiOutlineMenuAlt3, HiOutlineX } from "react-icons/hi";
 import { FiShoppingCart } from "react-icons/fi"; // Cart Icon
 import { Link } from "react-router-dom";
+import Cart from "../pages/Cart";
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
+  const [isCartOpen, setIsCartOpen] = useState(false); // State to control cart visibility
+
+  const handleOpenCart = () => {
+    setIsCartOpen(true);
+  };
+
+  const handleCloseCart = () => {
+    setIsCartOpen(false);
+  };
   return (
     <header className="sticky top-2 z-50 bg-gradient-to-r from-[#1a1a1a] to-[#000000] text-[#ced4da] px-4 sm:px-6 md:px-12 shadow-md rounded-xl mx-2">
       <div className="max-w-7xl mx-auto flex justify-between items-center py-4">
@@ -54,11 +64,13 @@ function Navbar() {
 
           {/* Cart Icon */}
           <button
+            onClick={handleOpenCart} // Call the function to open the cart
             className="text-2xl hover:text-[#ffffff] transition hover:bg-[#1a1a1a] p-2 rounded-md"
-            aria-label="Cart"
+            aria-label="Open Cart"
           >
             <FiShoppingCart />
           </button>
+          <Cart isOpen={isCartOpen} onClose={handleCloseCart} />
         </div>
 
         {/* Hamburger Icon */}
