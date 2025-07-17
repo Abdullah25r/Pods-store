@@ -8,7 +8,7 @@ function Footer() {
       {/* Thin Top Line */}
       <div className="h-[1px] w-full bg-white opacity-30 mb-10 mt-2"></div>
 
-      {/* Logo with Text at Top - Now Aligned Left */}
+      {/* Logo Section */}
       <div className="px-6 md:px-20 pb-6">
         <div className="flex justify-start mb-10">
           <Link to="/" className="flex items-center">
@@ -25,9 +25,9 @@ function Footer() {
           <div>
             <h2 className="font-semibold text-lg mb-4">Customer Services</h2>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-300 hover:text-white font-medium transition">Contact Us</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white font-medium transition">Delivery Info</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white font-medium transition">FAQs</a></li>
+              <li><Link to="#" className="text-gray-300 hover:text-white font-medium transition">Contact Us</Link></li>
+              <li><Link to="#" className="text-gray-300 hover:text-white font-medium transition">Delivery Info</Link></li>
+              <li><Link to="#" className="text-gray-300 hover:text-white font-medium transition">FAQs</Link></li>
             </ul>
           </div>
 
@@ -35,10 +35,10 @@ function Footer() {
           <div>
             <h2 className="font-semibold text-lg mb-4">Information</h2>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-300 hover:text-white font-medium transition">About Us</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white font-medium transition">Return & Refund</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white font-medium transition">Privacy Policy</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white font-medium transition">Terms & Conditions</a></li>
+              <li><Link to="/about" className="text-gray-300 hover:text-white font-medium transition">About TimePods</Link></li>
+              <li><Link to="/return-refund" className="text-gray-300 hover:text-white font-medium transition">Return & Refund</Link></li>
+              <li><Link to="/privacy-policy" className="text-gray-300 hover:text-white font-medium transition">Privacy Policy</Link></li>
+              <li><Link to="/terms-conditions" className="text-gray-300 hover:text-white font-medium transition">Terms & Conditions</Link></li>
             </ul>
           </div>
 
@@ -71,9 +71,9 @@ function Footer() {
         {/* Bottom Thin Line */}
         <div className="h-[1px] w-full bg-white opacity-20 mt-5 mb-5"></div>
 
-        {/* Centered Copyright */}
+        {/* Copyright */}
         <div className="w-full text-center text-sm">
-          Copyright © 2025 Timepods. All rights reserved.
+          Copyright © 2025 TimePods. All rights reserved.
         </div>
       </div>
     </div>
