@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react"; // ✅ fixed missing useEffect import
 
 function PrivacyPolicy() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="text-white py-10 px-6 lg:px-20">
       <h1 className="text-4xl font-bold text-center mb-6">Privacy Policy</h1>
@@ -11,6 +15,7 @@ function PrivacyPolicy() {
         <p>
           We may update this policy from time to time. Please check this page periodically to ensure you're satisfied with any changes.
         </p>
+
         <h2 className="text-2xl font-semibold mt-6">Information We Collect</h2>
         <ul className="list-disc list-inside pl-4">
           <li>Your name</li>
@@ -22,6 +27,7 @@ function PrivacyPolicy() {
           <li>Clicks and interactions on the website or app</li>
           <li>Feedback and responses to surveys or offers</li>
         </ul>
+
         <h2 className="text-2xl font-semibold mt-6">How We Use This Information</h2>
         <ul className="list-disc list-inside pl-4">
           <li>Maintain internal records</li>
@@ -31,6 +37,7 @@ function PrivacyPolicy() {
           <li>Occasionally send emails about new products or offers</li>
           <li>Conduct surveys or contact you for research via phone, email, or post</li>
         </ul>
+
         <h2 className="text-2xl font-semibold mt-6">Security Measures</h2>
         <p>
           We take your security seriously and use proper physical and digital methods to protect the information we collect online.

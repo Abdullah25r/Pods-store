@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 function AboutTimePods() {
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to top on component mount
+      }, []);
   return (
     <div className="text-white py-10 px-6 md:px-16">
       <h1 className="text-4xl font-bold mb-10 text-center">About TimePods</h1>
