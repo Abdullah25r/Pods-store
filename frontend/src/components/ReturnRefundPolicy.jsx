@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"; // ✅ make sure useEffect is imported
+import React, { useEffect } from "react";
 
 function ReturnRefundPolicy() {
   useEffect(() => {
@@ -7,11 +7,11 @@ function ReturnRefundPolicy() {
 
   return (
     <div className="text-white py-10 px-6 md:px-20">
-      <h1 className="text-4xl font-bold mb-8 text-center">
-        Return & Refund Policy
+      <h1 className="text-center font-poppins my-20 text-6xl md:text-5xl font-bold text-white">
+        Return & <span className="bg-gradient-to-b from-white to-cyan-900 bg-clip-text text-transparent">Refund Policy</span>
       </h1>
 
-      <div className="space-y-6 text-lg text-gray-300 text-left">
+      <div className="bg-gray-900/50 backdrop-blur-md border border-cyan-700 rounded-2xl shadow-lg p-8 space-y-6 text-left text-lg text-gray-300 transition duration-300 hover:shadow-cyan-500/30">
         <div>
           <h2 className="text-2xl font-semibold mb-2">Bring to a Store</h2>
           <p>

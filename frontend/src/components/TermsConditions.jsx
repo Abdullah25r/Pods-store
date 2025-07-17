@@ -7,11 +7,13 @@ function TermsConditions() {
 
   return (
     <div className="text-white py-10 px-4 md:px-20">
-      <h1 className="text-3xl font-bold mb-8 text-center">Terms & Conditions</h1>
+      <h1 className="text-center font-poppins my-20 text-6xl md:text-5xl font-bold text-white">
+        Terms & <span className="bg-gradient-to-b from-white to-cyan-900 bg-clip-text text-transparent">Conditions</span>
+      </h1>
 
-      <div className="text-gray-400 space-y-4 text-left">
+      <div className="bg-gray-900/50 backdrop-blur-md border border-cyan-700 rounded-2xl shadow-lg p-8 space-y-6 text-left text-lg text-gray-300 transition duration-300 hover:shadow-cyan-500/30">
         <p>
-          Your product includes a warranty card valid for 1 week. To claim the warranty, please present this card. If the card is lost, the original purchase invoice may be required. Without either document, the warranty will be considered void.
+          Your TimePods product includes a warranty card valid for 1 week. To claim the warranty, please present this card. If the card is lost, the original purchase invoice may be required. Without either document, the warranty will be considered void.
         </p>
 
         <p>
@@ -27,11 +29,11 @@ function TermsConditions() {
         </ul>
 
         <p>
-          While we aim to return your product by the committed date, unexpected delays may occur. Please understand that batteries in battery-operated products are not covered under warranty. Similarly, accessories such as microphones, remotes, or cables are not included in the warranty.
+          While we aim to return your TimePods product by the committed date, unexpected delays may occur. Please understand that batteries in battery-operated products are not covered under warranty. Similarly, accessories such as microphones, remotes, or cables are not included in the warranty.
         </p>
 
         <p>
-          In case the original product is unavailable, the company reserves the right to provide an alternative product, subject to any price difference.
+          In case the original TimePods product is unavailable, the company reserves the right to provide an alternative product, subject to any price difference.
         </p>
 
         <p>
