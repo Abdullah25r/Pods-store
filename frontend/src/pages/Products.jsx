@@ -23,9 +23,11 @@ function Products(props) {
         {filterProducts(category).map((product,index) => (
           <ProductCard
             key={index}
+            id = {product.id}
             path={product.image}
             name={product.name}
             desc={product.description}
+            price = {product.price}
           />
         ))}
       </div>

@@ -9,11 +9,10 @@ import Carousel from "./components/Carousel";
 import Productsheading from "./components/Productsheading";
 import Extras from "./components/Extras";
 import Gift from "./components/Gift";
-import Footer from './components/Footer';
+import Footer from "./components/Footer";
 import Watches from "./components/Watches";
 import Testimonial from "./components/Testimonial";
 
-// ✅ Import the new pages
 import AboutTimePods from "./components/AboutTimePods";
 import ReturnRefundPolicy from "./components/ReturnRefundPolicy";
 import PrivacyPolicy from "./components/PrivacyPolicy";
@@ -33,13 +32,10 @@ function App() {
           <Route path="/devices" element={<Devices />} />
           <Route path="/Cart" element={<Cart />} />
 
-             {/* ✅ New page routes */}
-                    <Route path="/about" element={<AboutTimePods />} />
-                    <Route path="/return-refund" element={<ReturnRefundPolicy />} />
-                    <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-                    <Route path="/terms-conditions" element={<TermsAndConditions />} />
-
-
+          <Route path="/about" element={<AboutTimePods />} />
+          <Route path="/return-refund" element={<ReturnRefundPolicy />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-conditions" element={<TermsAndConditions />} />
         </Routes>
       </div>
 

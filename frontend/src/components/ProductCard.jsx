@@ -1,7 +1,8 @@
-import React from "react";
+import React, { use, useContext } from "react";
 import Star from "./Star";
-
+import { cartContext } from "../Context/CartContext";
 const ProductCard = (props) => {
+  const context = useContext(cartContext);
   return (
     <div className="bg-[#1a1a1a] p-5 mb-10 mt-3 hover:-translate-y-2 transition-all rounded-lg shadow-md hover:shadow-[#1a1a1a] duration-300">
       <div className="align-items-center flex cursor-pointer -mx-2 flex-col mb-5">
@@ -17,10 +18,11 @@ const ProductCard = (props) => {
         <Star />
       </div>
       <div className="flex justify-between items-center mt-7">
-        <span className="font-semibold">$25.5</span>
+        <span className="font-semibold">{props.price}</span>
         <button
           type="button"
           class="text-black bg-white text-sm md:px-2 md:py-2 px-1 py-1 text-center inline-flex items-center me-2 border border-[#64748b] rounded-md hover:bg-[#1a1a1a] hover:text-white transition duration-250 ease-in-out font-semibold"
+          onClick={() =>{context.addProduct(props)}}
         >
           <svg
             class="w-3.5 h-3.5 me-2"
